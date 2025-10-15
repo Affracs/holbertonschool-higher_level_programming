@@ -13,5 +13,5 @@ class Square:
         """
         Initialize the square with a given size.
         """
-        
+
         self.__size = size
