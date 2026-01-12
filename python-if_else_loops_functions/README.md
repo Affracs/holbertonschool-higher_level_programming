@@ -10,8 +10,8 @@
 ---
 
 ## Table of Content
-- [2-print.py] 
-Learnt : In python, print includes newline by default
+- [0-positive_or_negative.py] 
+Learnt : if/elif/else statement, condition, syntax
 - [3-print_number] 
 Learnt : F strings allows the use of variables in strings between curly brackets
 - [3-print_number.py] 
