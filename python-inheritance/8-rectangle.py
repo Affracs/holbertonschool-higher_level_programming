@@ -18,5 +18,8 @@ class BaseGeometry:
 
 
 class rectangle(BaseGeometry):
+    """Rectangle Class inheriting from BaseGeometry class"""
+    
     def __init__(self, width, name):
+        """Private instatialization of the 3 atributes."""
         pass
