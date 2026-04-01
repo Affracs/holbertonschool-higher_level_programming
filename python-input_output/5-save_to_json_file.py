@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-"""Module for loading a Python object from a JSON file."""
+"""Module for saving a Python object to a JSON file."""
 
 import json
 
 
-def load_from_json_file(filename):
-    """Creates an object from a JSON file.
+def save_to_json_file(my_obj, filename):
+    """Writes an object to a text file using a JSON representation.
 
     Args:
-        filename (str): The name of the file to read from.
+        my_obj: The Python object to serialize.
+        filename (str): The name of the file to write to.
 
     Returns:
-        object: The Python object represented by the JSON file.
+        None
     """
-    with open(filename, "r", encoding="utf-8") as f:
-        return json.load(f)
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(my_obj, f)
