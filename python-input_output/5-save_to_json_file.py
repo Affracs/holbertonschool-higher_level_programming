@@ -1,6 +1,16 @@
 #!/usr/bin/python3
+"""Module for converting a JSON string to a Python object."""
+
 import json
 
-def save_to_json_file(my_obj, filename):
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(my_obj, f)
+
+def from_json_string(my_str):
+    """Returns the Python object represented by a JSON string.
+
+    Args:
+        my_str (str): The JSON string to convert.
+
+    Returns:
+        object: The Python object resulting from the JSON string.
+    """
+    return json.loads(my_str)
